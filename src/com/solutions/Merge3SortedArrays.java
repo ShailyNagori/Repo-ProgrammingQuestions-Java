@@ -1,4 +1,4 @@
-package com.codeFactory.test;
+package com.solutions;
 
 import java.util.PriorityQueue;
 

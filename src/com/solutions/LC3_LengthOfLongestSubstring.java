@@ -1,4 +1,4 @@
-package com.codeFactory.test;
+package com.solutions;
 
 /*
 Given a string, find the length of the longest substring without repeating characters.

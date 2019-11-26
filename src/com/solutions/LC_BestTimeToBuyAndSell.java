@@ -1,4 +1,4 @@
-package com.codeFactory.test;
+package com.solutions;
 
 /*
 Say you have an array for which the ith element is the price of a given stock on day i.

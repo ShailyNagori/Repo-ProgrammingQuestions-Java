@@ -1,4 +1,4 @@
-package com.codeFactory.test;
+package com.solutions;
 
 /*
 Given a singly linked list, determine if it is a palindrome.
