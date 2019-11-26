@@ -9,11 +9,13 @@ Input: 1->2
 Output: false
  */
 
+import com.commons.ListNode;
+
 public class LC_LLisPalindrome {
-    public boolean isPalindrome(LC2_Add2Numbers.ListNode head) {
+    public boolean isPalindrome(ListNode head) {
         if(head == null || head.next == null) return  true;
-        LC2_Add2Numbers.ListNode fast = head;
-        LC2_Add2Numbers.ListNode slow = head;
+        ListNode fast = head;
+        ListNode slow = head;
         while(fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
@@ -32,10 +34,10 @@ public class LC_LLisPalindrome {
         }
         return true;
     }
-    public LC2_Add2Numbers.ListNode reverse(LC2_Add2Numbers.ListNode head) {
-        LC2_Add2Numbers.ListNode next = head;
-        LC2_Add2Numbers.ListNode curr = head;
-        LC2_Add2Numbers.ListNode prev = null;
+    public ListNode reverse(ListNode head) {
+        ListNode next = head;
+        ListNode curr = head;
+        ListNode prev = null;
         while(curr != null) {
             next = curr.next;
             curr.next = prev;
@@ -48,9 +50,9 @@ public class LC_LLisPalindrome {
 
     public static void main(String[] args) {
         LC_LLisPalindrome obj = new LC_LLisPalindrome();
-        LC2_Add2Numbers.ListNode head = new LC2_Add2Numbers.ListNode(1);
-        head.next = new LC2_Add2Numbers.ListNode(2);
-        head.next.next = new LC2_Add2Numbers.ListNode(1);
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(1);
         boolean res = obj.isPalindrome(head);
         System.out.println(res);
 
